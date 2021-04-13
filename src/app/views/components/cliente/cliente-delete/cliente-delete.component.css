@@ -1,0 +1,21 @@
+.form {
+    width: 40%;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 100%;
+    margin-bottom: .5rem;
+}

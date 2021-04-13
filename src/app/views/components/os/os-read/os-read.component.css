@@ -1,0 +1,45 @@
+.create {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.create button {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+}
+
+#edit {
+    color: rgba(238, 255, 5, 0.445);
+}
+
+#delete {
+    color: rgba(255, 0, 0, 0.534);
+}
+
+td.baixa {
+    color: rgb(6, 255, 6);
+}
+
+td.media {
+    color: yellow;
+}
+
+td.alta {
+    color: red;
+}

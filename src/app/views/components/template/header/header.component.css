@@ -1,0 +1,12 @@
+.header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    border: 1px solid rgb(97, 96, 96);
+    padding: .4rem 15%;
+    border-radius: 5px;
+}
