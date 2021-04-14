@@ -55,8 +55,7 @@ const routes: Routes = [
   {
     path: 'os',
     component: OsReadComponent
-  },
-  {
+  },{
     path: 'os/closed',
     component: OsClosedComponent
   },

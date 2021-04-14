@@ -12,8 +12,8 @@
             </a>
             <a mat-list-item [matMenuTriggerFor]="menu">
                 <mat-menu #menu="matMenu">
-                    <a routerLink="os" mat-menu-item>Aberto ou Em Andamento</a>
-                    <a routerLink="os/closed" mat-menu-item>Encerrado</a>
+                    <a routerLink="os" mat-menu-item> Abertas ou Em Andamento</a>
+                    <a routerLink="os/closed" mat-menu-item> Encerradas</a>
                 </mat-menu>
                 <i class="material-icons">person_pin</i>Ordens de Serviço
             </a>
@@ -22,8 +22,8 @@
 
     <div class="sidenav-content">
         <button mat-icon-button (click)="drawer.toggle()">
-        <mat-icon>more_vert</mat-icon>
-      </button>
+            <mat-icon>more_vert</mat-icon>
+        </button>
         <router-outlet></router-outlet>
     </div>
 

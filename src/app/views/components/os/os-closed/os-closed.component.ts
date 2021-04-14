@@ -22,23 +22,23 @@ export class OsClosedComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(
-    private service : OsService,
-    private router : Router,
+    private service: OsService,
+    private router: Router,
     private tecnicoService: TecnicoService,
-    private clienteService: ClienteService) {}
+    private clienteService: ClienteService) { }
 
   ngAfterViewInit() {
     this.findAll();
   }
 
-  findAll():void {
+  findAll(): void {
     this.service.findAll().subscribe((resposta) => {
       resposta.forEach(x => {
         if(x.status == "ENCERRADO") {
           this.lista.push(x)
         }
       })
-      
+
       this.listarTecnico();
       this.listaCliente();
       this.dataSource = new MatTableDataSource<OS>(this.lista);
@@ -46,11 +46,7 @@ export class OsClosedComponent implements AfterViewInit {
     })
   }
 
-  navigateToCreate():void {
-    this.router.navigate(['os/create'])
-  }
-
-  listarTecnico():void {
+  listarTecnico(): void {
     this.lista.forEach(x => {
       this.tecnicoService.findById(x.tecnico).subscribe(resposta => {
         x.tecnico = resposta.nome
@@ -66,10 +62,10 @@ export class OsClosedComponent implements AfterViewInit {
     })
   }
 
-  prioridade(x : any) {
-    if(x == 'BAIXA') {
+  prioridade(x: any) {
+    if (x == 'BAIXA') {
       return 'baixa'
-    } else if(x == 'MEDIA') {
+    } else if (x == 'MEDIA') {
       return 'media'
     } else {
       return 'alta'
